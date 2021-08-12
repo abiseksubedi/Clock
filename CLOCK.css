@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;1,100&display=swap');
+body {
+    background-color: rgba(35, 180, 112, 0.219);
+    margin: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.nav-bar {
+    overflow: hidden;
+    height: 3em;
+    background-color: hotpink;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 1em;
+    align-items: center;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+}
+
+ul a {
+    font-size: 12px;
+    padding-right: 5px;
+    margin-right: 1em;
+    color: white;
+    text-decoration: none;
+    float: right;
+}
+
+header {
+    text-align: center;
+    width: 8em;
+    border-radius: 12px;
+    background: linear-gradient(to left, white, hotpink);
+    background: radial-gradient(hotpink, white);
+}
+
+header img {
+    width: 1.3em;
+}
+
+li a:hover {
+    background-color: rgba(255, 255, 255, 0.342);
+    color: black;
+    text-align: center;
+}
+
+.clock-space {
+    color: hotpink;
+    border-left: 1px dashed black;
+    border-width: 0.3em;
+    width: 70%;
+    margin-top: 2em;
+    margin-left: auto;
+}
+
+.clock-space #box {
+    width: 70%;
+    height: 50vh;
+    position: relative;
+    margin: auto;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+#time {
+    font-size: large;
+    font-weight: bolder;
+}
+
+video {
+    width: 100%;
+    height: 100%;
+}
+
+h1 {
+    animation-duration: 8s;
+    animation-name: slidein;
+    animation-iteration-count: infinite;
+}
+
+@keyframes slidein {
+    0% {
+        margin-left: 0%;
+    }
+    50% {
+        margin-left: 300px;
+    }
+    100% {
+        margin-left: 0%;
+    }
+}
